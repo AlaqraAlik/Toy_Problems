@@ -5,8 +5,23 @@
 //  nextItem([1, 2, 3, 4, 5, 6, 7], 3) # 4
 //  nextItem("testing", "t") # "e"
 
-	function nextItem(items, elem){
-		//your code is here
+	function nextItem(items, elem)
+	{  // items.split("")
+		var result
+		for(var i=0;i<items.length;i++)
+		{
+			if(elem===items[i])
+			{
+				i=i+1;
+				return '# '+ items[i]
+
+			}
+			
+			else
+				return null
+			}
+
+		
 	}
 
 //  We need a function that can transform a number into a string.
@@ -15,5 +30,14 @@
 // 	numberToString(999); // returns '999';`
 
 	function numberToString(num) {
-	  //your code is here
+	  var str=""
+	  return  str+=num
+
+
+	}
+	function numberToString2(num) {
+	  
+	  return  num.toString()
+
+	  
 	}
